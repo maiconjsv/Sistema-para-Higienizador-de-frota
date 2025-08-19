@@ -1,6 +1,8 @@
-# Controle de higienização de veículos.
+# Controle de pátio.
 
-Este é um projeto web funcional criado com HTML, CSS e JavaScript, utilizando o Firebase como backend.
+Este é um sistema web criado com o objetivo de resolver o problema de controle de pátio da equipe do quiosque da Localiza seminovos no Catuaí Shopping em Londrina.
+Esses o qual utilizavam o método manual de registrar a saida e entrada de veículos, o que era um processo demorado e que rendia muitas inconsistencias nos dias de inventário.
+E somando ao fato da equipe de vendas ficar a 2 andares de distância do subsolo g1, onde se localiza o pátio, tudo se tornava mais lento e ineficaz.
 
 # Sobre o projeto
 
@@ -13,7 +15,7 @@ E o sistema é protegido por uma autenticação de login, com todas alterações
 - HTML5  
 - CSS3  
 - JavaScript Vanilla  
-- Firebase (Firestore e Authentication)
+- Firebase (Firestore,hosting e Authentication)
 
 # Funcionalidades
 
@@ -22,9 +24,9 @@ E o sistema é protegido por uma autenticação de login, com todas alterações
 - [✔] Interface responsiva, com acesso via smartphones, tablets e desktops
 - [✔] Adição, consulta e alteração do estado de veículos.
 - [ ] Relógio funcional integrado a internet
-- [ ] Consulta de pátio em geral
+- [✔] Consulta de pátio em geral
 
 ##  Observações
 
 Esse projeto foi essencial para consolidar meus conhecimentos em desenvolvimento web. Estou aberto a feedbacks e melhorias!
-O projeto atualmente está na versão 0.1, e está com algumas funcionalidades inoperantes no momento, e pode apresentar bugs, mas já está em uso, e em constante atualizações.
+O projeto atualmente está na versão 0.3, e está com algumas funcionalidades inoperantes no momento, e pode apresentar bugs, mas já está em uso, e em constante atualizações.
