@@ -12,12 +12,11 @@ const app = firebase.initializeApp(firebaseConfig);
 const auth = app.auth();
 const db = app.firestore();
 
-// Referências aos elementos HTML da header (devem existir no seu HTML)
 const nameInfoDiv = document.getElementById('nameInfo');
 const companyInfoDiv = document.getElementById('companyInfo');
 const logoutButton = document.getElementById('logoutButton');
 
-// Monitorar o estado da autenticação (executa quando o app Firebase estiver pronto)
+// Monitorar o estado da autenticação
 auth.onAuthStateChanged((user) => {
     if (user) {
         console.log("Usuário logado no Painel:", user.email, user.uid);
@@ -34,7 +33,7 @@ auth.onAuthStateChanged((user) => {
 });
 
 
-// Lógica para o botão de Desconectar-se (deve existir no seu HTML)
+// Lógica para o botão de Desconectar-se 
 // Verifica se o botão existe antes de adicionar o listener
 if (logoutButton) {
     logoutButton.addEventListener('click', () => {
@@ -107,7 +106,7 @@ async function registrarVeiculoHigienizado() {
     // Verificação básica para garantir que todos os inputs existem
     if (!placaInput || !modeloInput || !corInput || !dataInput || !registerButton) {
         console.error("Um ou mais elementos HTML para registro de higienização não foram encontrados. Verifique os IDs.");
-        return; // Sai da função se os elementos não existirem
+        return;
     }
 
     // 2. Adicionar um "ouvinte de evento" ao botão Registrar
